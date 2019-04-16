@@ -1,8 +1,5 @@
-# Unit 6 - Introduction to Clustering
+# Clustering
 
-# Video 6
-
-# After following the steps in the video, load the data into R
 movies = read.table("movieLens.txt", header=FALSE, sep="|",quote="\"")
 
 str(movies)
@@ -24,9 +21,6 @@ movies = unique(movies)
 # Take a look at our data again:
 str(movies)
 
-
-
-# Video 7
 
 # Compute distances
 distances = dist(movies[2:20], method = "euclidean")
