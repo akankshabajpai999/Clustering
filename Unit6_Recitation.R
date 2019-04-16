@@ -1,6 +1,5 @@
-# Unit 6 - Recitation
+# Recitation
 
-# Video 2
 
 flower = read.csv("flower.csv", header=FALSE)
 str(flower)
@@ -19,9 +18,6 @@ str(flowerVector2)
 # Compute distances
 distance = dist(flowerVector, method = "euclidean")
 
-
-
-# Video 3
 
 # Hierarchical clustering
 clusterIntensity = hclust(distance, method="ward")
@@ -45,9 +41,6 @@ image(flowerClusters, axes = FALSE)
 image(flowerMatrix,axes=FALSE,col=grey(seq(0,1,length=256)))
 
 
-
-# Video 4
-
 # Let's try this with an MRI image of the brain
 
 healthy = read.csv("healthy.csv", header=FALSE)
@@ -64,9 +57,6 @@ distance = dist(healthyVector, method = "euclidean")
 # We have an error - why?
 str(healthyVector)
 
-
-
-# Video 5
 
 # Specify number of clusters
 k = 5
@@ -85,9 +75,6 @@ dim(healthyClusters) = c(nrow(healthyMatrix), ncol(healthyMatrix))
 
 image(healthyClusters, axes = FALSE, col=rainbow(k))
 
-
-
-# Video 6
 
 # Apply to a test image
  
